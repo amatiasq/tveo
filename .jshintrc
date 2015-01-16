@@ -1,0 +1,93 @@
+// jshint maxlen:false
+
+{
+  // Enforcing
+  "bitwise": true,       // Prohibits the use of bitwise operators such as ^ (XOR), | (OR) and others.
+  "camelcase": true,     // Allows you to force all variable names to use either camelCase style or UPPER_CASE with underscores.
+  "curly": false,        // Requires you to always put curly braces around blocks in loops and conditionals.
+  "enforceall": false,   // Is a short hand for the most strict JSHint configuration.
+  "eqeqeq": true,        // This options prohibits the use of == and != in favor of === and !==.
+  "es3": false,          // Tells JSHint that your code needs to adhere to ECMAScript 3 specification.
+  "es5": false,          // Enables syntax first defined in the ECMAScript 5.1 specification.
+  "forin": true,         // Requires all for in loops to filter object's items.
+  "freeze": true,        // Prohibits overwriting prototypes of native objects such as Array, Date and so on.
+  "immed": true,         // Prohibits the use of immediate function invocations without wrapping them in parentheses.
+  "indent": 2,           // Sets a specific tab width for your code.
+  "latedef": "nofunc",   // Prohibits the use of a variable before it was defined. "nofunc" will allow function declarations to be ignored.
+  "maxcomplexity": 4,    // Lets you control cyclomatic complexity throughout your code.
+  "maxdepth": 4,         // Lets you control how nested do you want your blocks to be
+  "maxerr": 50,          // This options allows you to set the maximum amount of warnings JSHint will produce before giving up.
+  "maxlen": 80,          // Lets you set the maximum length of a line.
+  "maxparams": 4,        // Lets you set the max number of formal parameters allowed per function
+  "maxstatements": 15,   // Lets you set the max number of statements allowed per function
+  "newcap": true,        // Requires you to capitalize names of constructor functions.
+  "noarg": true,         // Prohibits the use of arguments.caller and arguments.callee.
+  // "nocomma": false,       // Prohibits the use of the comma operator.
+  "noempty": true,       // Warns when you have an empty block in your code.
+  "nonbsp": true,        // Warns about "non-breaking whitespace" characters.
+  "nonew": true,         // Prohibits the use of constructor functions for side-effects.
+  "quotmark": true,      // Enforces the consistency of quotation marks used throughout your code.
+  "singleGroups": false, // Prohibits the use of the grouping operator for single-expression statements.
+  "strict": true,        // Requires all functions to run in ECMAScript 5's strict mode.
+  "undef": true,         // Prohibits the use of explicitly undeclared variables.
+  "unused": true,        // Warns when you define and never use your variables.
+
+  // Relaxing
+  "shadow": false,       // Suppresses warnings about variable shadowing.
+  "asi": false,          // Suppresses warnings about missing semicolons.
+  "boss": false,         // Suppresses warnings about the use of assignments in cases where comparisons are expected.
+  "debug": false,        // Suppresses warnings about the debugger statements in your code.
+  // "elision": false,      // Tells JSHint that your code uses ES3 array elision elements, or empty elements (for example, [1, , , 4, , , 7]).
+  "eqnull": true,        // Suppresses warnings about == null comparisons.
+  "esnext": false,       // Tells JSHint that your code uses ECMAScript 6 specific syntax.
+  "evil": false,         // Suppresses warnings about the use of eval.
+  "expr": false,         // Suppresses warnings about the use of expressions where normally you would expect to see assignments or function calls.
+  "funcscope": false,    // Suppresses warnings about declaring variables inside of control structures while accessing them later from the outside.
+  "globalstrict": false, // Suppresses warnings about the use of global strict mode.
+  "iterator": false,     // Suppresses warnings about the __iterator__ property. This property is not supported by all browsers so use it carefully.
+  "lastsemic": true,     // Suppresses warnings about missing semicolons, but only when the semicolon is omitted for the last statement in a one-line block.
+  "laxbreak": false,     // Suppresses most of the warnings about possibly unsafe line breakings in your code.
+  "laxcomma": false,     // Suppresses warnings about comma-first coding style:
+  "loopfunc": false,     // Suppresses warnings about functions inside of loops.
+  "moz": false,          // This options tells JSHint that your code uses Mozilla JavaScript extensions.
+  "multistr": false,     // Suppresses warnings about multi-line strings.
+  "notypeof": false,     // Suppresses warnings about invalid typeof operator values.
+  "noyield": false,      // Suppresses warnings about generator functions with no yield statement in them.
+  "phantom": false,      // Defines globals available when your core is running inside of the PhantomJS runtime environment.
+  "plusplus": false,     // Prohibits the use of unary increment and decrement operators.
+  "proto": false,        // Suppresses warnings about the __proto__ property.
+  "scripturl": false,    // Suppresses warnings about the use of script-targeted URLs—such as javascript:....
+  "sub": false,          // Suppresses warnings about using [] notation when it can be expressed in dot notation.
+  "supernew": false,     // Suppresses warnings about "weird" constructions like new function () { ... } and new Object;.
+  "validthis": false,    // Suppresses warnings about when the code is running in strict mode and you use this in a non-constructor function.
+  "withstmt": false,     // Suppresses warnings about the use of the with statement.
+
+  // Environments
+  "browser": true,       // Note: Doesn't expose variables like alert or console. See option devel for more information.
+  "browserify": true,    // Defines globals available when using the Browserify tool to build a project.
+  "couch": false,        // Defines globals exposed by CouchDB.
+  "devel": true,         // Defines globals that are usually used for logging poor-man's debugging: console, alert, etc.
+  "dojo": false,         // Defines globals exposed by the Dojo Toolkit.
+  "jasmine": false,      // Defines globals exposed by the Jasmine unit testing framework.
+  "jquery": false,       // Defines globals exposed by the jQuery JavaScript library.
+  "mocha": false,        // Defines globals exposed by the "BDD" and "TDD" UIs of the Mocha unit testing framework.
+  "mootools": false,     // Defines globals exposed by the MooTools JavaScript framework.
+  "node": false,         // Defines globals available when your code is running inside of the Node runtime environment.
+  "nonstandard": false,  // Defines non-standard but widely adopted globals such as escape and unescape.
+  "prototypejs": false,  // Defines globals exposed by the Prototype JavaScript framework.
+  "qunit": false,        // Defines globals exposed by the QUnit unit testing framework.
+  "rhino": false,        // Defines globals available when your code is running inside of the Rhino runtime environment.
+  "shelljs": false,      // Defines globals exposed by the ShellJS library.
+  "typed": false,        // Defines globals for typed array constructors.
+  "worker": false,       // Defines globals available when your code is running inside of a Web Worker.
+  "wsh": false,          // Defines globals available when your code is running as a script for the Windows Script Host.
+  "yui": false,          // Defines globals exposed by the YUI JavaScript framework.
+
+  /// Specific warnings
+  // "-W013": true,         // Missing space after 'x'. It fires with "function() { }"
+  // "-W127": true,         // Extra comma. (it breaks older versions of IE)
+  // "-W026": true,         // Inner functions should be listed at the top of the outer function.
+
+  // Globals
+  "globals": {}
+}
